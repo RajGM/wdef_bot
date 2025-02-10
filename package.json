@@ -1,0 +1,31 @@
+{
+  "name": "matrix-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RajGM",
+  "license": "ISC",
+  "_moduleAliases": {
+    "@config": "config",
+    "@services": "services"
+  },
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.19",
+    "@pinecone-database/pinecone": "^4.1.0",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "js-tiktoken": "^1.0.17",
+    "matrix-bot-sdk": "^0.7.1",
+    "module-alias": "^2.2.3",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.9",
+    "openai": "^4.82.0",
+    "p-limit": "^6.2.0"
+  }
+}
