@@ -63,7 +63,8 @@ async function decideAgent(candidateKeys, latestQuery) {
     });
     const chosenKey = completionResponse.choices?.[0]?.message?.content?.trim();
     if (!candidateKeys.includes(chosenKey)) {
-      throw new Error(`Master agent returned an invalid key: ${chosenKey}`);
+      return candidateKeys[0]; // Fallback to the first candidate if the choice is invalid.
+      //throw new Error(`Master agent returned an invalid key: ${chosenKey}`);
     }
     return chosenKey;
   } catch (error) {

@@ -23,7 +23,7 @@ function createCommandHandler(client) {
       const answer = await delegateTask([], event.content.body);
       
       // Send a reply in the room.
-      //await client.replyNotice(roomId, event, answer);
+      await client.replyNotice(roomId, event, answer);
     } catch (error) {
       console.error("Error handling command:", error);
     }
